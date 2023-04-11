@@ -179,30 +179,53 @@ public class GamePlayer implements Contract {
         lastAction = null; // reset the last action after undoing it
     }
 
+    
+    /**
+     * Take a rest and regain health points
+     */
     public void rest() {
         // The player rests and regains some health.
         this.health += 10;
         System.out.println("Player's health is now " + this.health);
     }
 
+
+    /**
+     * grow 1 in size
+     */
     public Number grow(){
         this.size++;
         return this.size;
     }
 
+    
+    /**
+     * shrink 1 in size
+     */
     public Number shrink(){
         this.size--;
         return this.size;
     }
 
+    
+    /**
+     * get PostionX value
+     */
     public Number getPositionX(){
         return this.positionX;
     }
 
+    /**
+     * get PostionY value
+     */
     public Number getPositionY(){
         return this.positionY;
     }
 
+
+    /**
+     * get health value
+     */
     public Number getHealth(){
         return this.health;
     }
